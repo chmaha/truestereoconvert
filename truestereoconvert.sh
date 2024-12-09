@@ -1,5 +1,5 @@
 #!/bin/sh
-# Batch script to convert various types of audio files to true stereo (LRLR)
+# Batch script to convert various types of audio files to Duplicated True Stereo (LRLR)
 
 # TrueStereoConvert
 # Copyright (C) 2024 chmaha
@@ -41,7 +41,7 @@ for file in "$@"; do
 
   if echo "$SUPPORTED_EXTENSIONS" | grep -qw "$extension"; then
     echo "Converting '$file' to true stereo (LRLR) format..."
-    output="${file%.*}_LRLR.${extension}"
+    output="${file%.*}_DTS.${extension}"
     sox "$file" "$output" remix 1 2 1 2
     echo "Done: '$output'"
   else
