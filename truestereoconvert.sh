@@ -40,7 +40,7 @@ for file in "$@"; do
   extension=$(echo "${file##*.}" | tr '[:upper:]' '[:lower:]')
 
   if echo "$SUPPORTED_EXTENSIONS" | grep -qw "$extension"; then
-    echo "Converting '$file' to true stereo (LRLR) format..."
+    echo "Converting '$file' to Duplicated True Stereo (LRLR) format..."
     output="${file%.*}_DTS.${extension}"
     sox "$file" "$output" remix 1 2 1 2
     echo "Done: '$output'"
