@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-if ! command -v sox &> /dev/null
+if ! command -v sox >/dev/null 2>&1
 then
     echo "Error: Please install SoX to use this script."
     echo "On Linux, you can install it with your package manager. For example:"
