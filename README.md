@@ -8,7 +8,7 @@ This tool processes audio files by duplicating the left and right channels and o
 
 - Supports a wide range of audio formats: WAV, FLAC, AIFF, MP3, OGG, Opus, and WavPack.
 - Simple batch conversion by terminal command.
-- The output is saved with the suffix `_DTS` to indicate the processed format.
+- The output is saved with the suffix `_DTS` ("Duplicated True Stereo") to indicate the processed format.
   
 
 ## Prerequisites
